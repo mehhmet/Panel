@@ -1,1 +1,1 @@
-Lütfen Master Branch a dokunmayýn editlemeleriniz EditStart üzerinde gerçekleþtiriniz.
+--Lütfen Master Branch a dokunmayýn editlemeleriniz EditStart üzerinde gerçekleþtiriniz.
