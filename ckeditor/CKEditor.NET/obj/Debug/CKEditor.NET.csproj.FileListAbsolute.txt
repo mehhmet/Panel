@@ -1,0 +1,4 @@
+C:\Users\hp\Desktop\myweb\ckeditor\CKEditor.NET\bin\Debug\CKEditor.NET.dll
+C:\Users\hp\Desktop\myweb\ckeditor\CKEditor.NET\bin\Debug\CKEditor.NET.pdb
+C:\Users\hp\Desktop\myweb\ckeditor\CKEditor.NET\obj\Debug\CKEditor.NET.dll
+C:\Users\hp\Desktop\myweb\ckeditor\CKEditor.NET\obj\Debug\CKEditor.NET.pdb

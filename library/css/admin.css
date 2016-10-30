@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Play');
+body{margin:0;padding: 0;background-color: #151515;font-family: "Play",sans-serif;font-size:14px;color:#ffffff;}
+a{text-decoration: none;color:#ffffff;}
+.header{width:85%;height:70px;border-radius: 15px;padding-top: 5px;margin:20px auto 0 auto;background-color: #000000;border:2px dashed #ffffff;-webkit-box-shadow: 0 0 0 4px black, 0 6px 4px black;-moz-box-shadow: 0 0 0 4px black, 0 6px 4px black;box-shadow: 0 0 0 4px black, 0 6px 4px black;}
+.content{width: 85%;min-height: 500px;margin:20px auto;}
+.menu{width:25%;min-height: 500px;border-radius: 15px;float:left;background-color: #000000;border:2px dashed #ffffff;-webkit-box-shadow: 0 0 0 4px black, 0 6px 4px black;-moz-box-shadow: 0 0 0 4px black, 0 6px 4px black;box-shadow: 0 0 0 4px black, 0 6px 4px black;}
+.pholder{float: right;width:70%;min-height:500px;background-color: #000000;border-radius: 15px;border:2px dashed #ffffff;-webkit-box-shadow: 0 0 0 4px black, 0 6px 4px black;-moz-box-shadow: 0 0 0 4px black, 0 6px 4px black;box-shadow: 0 0 0 4px black, 0 6px 4px black;}
+.cont{width: 100%;padding:15px;}
+.menubutton{width: 80%;border:2px dashed white;margin:10px auto;border-radius: 15px;text-align: center;color:#ffffff;font-size:18px;padding: 5px 7px;}
+.menubutton:hover{border:2px solid;}
+.listbox1{width:250px;margin:0 auto;padding: 5px;font-family: "Play",sans-serif;font-size: 14px;background-color:rgba(255,0,0,0);color:#ffffff;border:none;}
+::-webkit-scrollbar {width: 12px;}
+::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(255,0,0,0.3);border-radius: 10px;}
+::-webkit-scrollbar-thumb {border-radius: 10px;-webkit-box-shadow: inset 0 0 6px rgba(255,0,0,0.5);}
+.listbox1:checked{border:none;}
+.listbox1:active{border:none;}
+.listbox1:link{border:none;}
+.listbox1:focus{border:none;}
+.listbox1:visited{border:none;}
+select:checked{border:none !important;}
+option:checked{background-color:#ffffff !important;}
+.myButton{-moz-box-shadow:inset 0px 42px 2px -17px #b54b3a;-webkit-box-shadow:inset 0px 42px 2px -17px #b54b3a;box-shadow:inset 0px 42px 2px -17px #b54b3a;background-color:#a73f2d;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;border:1px solid #241d13;display:inline-block;cursor:pointer;color:#ffffff;font-family:Arial;font-size:14px;padding:8px 14px;text-decoration:none;text-shadow:2px 2px 3px #7a2a1d;}
+.myButton:hover {background-color:#b34332;}
+.myButton:active {position:relative;top:1px;}
+.myButtonS{-moz-box-shadow:inset 0px 42px 2px -17px #b54b3a;-webkit-box-shadow:inset 0px 42px 2px -17px #b54b3a;box-shadow:inset 0px 42px 2px -17px #b54b3a;background-color:#a73f2d;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;border:1px solid #241d13;display:inline-block;cursor:pointer;color:#ffffff;font-family:Arial;font-size:14px;padding:8px 14px;text-decoration:none;text-shadow:2px 2px 3px #7a2a1d;}
+.myButtonS:hover {background-color:#b34332;}
+.myButtonS:active{position:relative;top:1px;}
+.ziyaretci{color:#a73f2d;margin:5px;margin-top: 15px;}
+.tablelist{border:1px solid #ffffff;}
+
+
+::-moz-selection {background: #a73f2d;color: #000000;}
+::selection {background: #a73f2d;color: #000;}
+a::-moz-selection {background: #a73f2d;color: #000;}
+a::selection {background: #a73f2d;color: #000;}
