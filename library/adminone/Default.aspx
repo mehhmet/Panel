@@ -5,6 +5,34 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
       
+      <% Response.Write(Session["@browser"].ToString()); %>
+
+      <div class="row">
+          <div class="col-lg-12">
+            <div class="bs-example">
+              <div class="alert alert-dismissable alert-success">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <h4>Neler Yeni</h4>
+                <p>Panele gelen güncelleme ile aşağıdaki özellikler eklenmiştir.<br /><br />
+                
+                <ul>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <ul>
+                            <li>List Item</li>
+                            <li>List Item</li>
+                            <li>List Item</li>
+                        </ul>
+                        <li>List Item</li>
+                    </ul>
+                
+                
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       <div class="row">
           <div class="col-lg-12">
             <div class="bs-example">

@@ -1752,6 +1752,9 @@ input[type="date"] {
 .checkbox-inline input[type="checkbox"] {
   float: left;
   margin-left: -20px;
+    top: 2px;
+    height: 20px;
+    width: 20px;
 }
 .radio + .radio,
 .checkbox + .checkbox {
@@ -5464,18 +5467,14 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 .carousel-control.left {
-  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0%), color-stop(rgba(0, 0, 0, 0.0001) 100%));
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
 }
 .carousel-control.right {
   left: auto;
   right: 0;
-  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0%), color-stop(rgba(0, 0, 0, 0.5) 100%));
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 .carousel-control:hover,
 .carousel-control:focus {
@@ -6277,3 +6276,60 @@ table.tablesorter thead tr th:hover {
                     right: auto;
                 }
         }
+        
+        .modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.9);
+	z-index: 9999;
+	opacity:0;
+	-webkit-transition: opacity 800ms ease-in;
+	-moz-transition: opacity 800ms ease-in;
+	transition: opacity 800ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 80%;
+	position: relative;
+	margin: 2% auto;
+	padding: 2px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#2a9fd6, #2a9fd6);
+	background: -webkit-linear-gradient(#2a9fd6, #2a9fd6);
+	background: -o-linear-gradient(#2a9fd6, #2a9fd6);
+	background:rgba(42,159,214,0.7);
+
+	
+}
+.close {
+	background: #000;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 30px;
+	height:30px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 15px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+	padding:3px;
+}
+
+.close:hover { background: #00d9ff; }

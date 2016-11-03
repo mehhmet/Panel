@@ -38,24 +38,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="default.aspx">Admin Panelim</a>
+                <a class="navbar-brand" href="default.aspx">Panel Versiyonu = 1.0</a>
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul id="active" class="nav navbar-nav side-nav">
                     
                     <li ><a href="default.aspx"><i class="fa fa-home"></i> Son Aktiviteler</a></li>
-                    <li><a href="gallery.aspx"><i class="fa fa-picture-o"></i> Fotoğraf Galerisi</a></li>
+                    <li><a href="gallery.aspx"><i class="fa fa-picture-o"></i> Dosya Kütüphanesi</a></li>
                     <li><a href="pages.aspx"><i class="fa fa-file"></i> Sayfa Yönetimi</a></li>
                     <li><a href="sliders.aspx"><i class="fa fa-sliders"></i> Slider</a></li>
-                    <li><a href="language.aspx"><i class="fa fa-font"></i> Dil Seçenekleri</a></li>
-                    
-                    <li><a href="forms.html"><i class="fa fa-list-ol"></i> Forms</a></li>
-                    
+                    <li><a href="produck.aspx"><i class="fa fa-trademark"></i> Ürünler</a></li>
+                    <li><a href="language.aspx"><i class="fa fa-font"></i> Dil Seçenekleri</a></li>                    
                     <li><a href="comments.aspx"><i class="fa fa-comments-o"></i> Mesaj/Yorum <span class="badge"> 5</span></a></li>
                     <li><a href="administrator.aspx"><i class="fa fa-sign-in"></i> Admin Girişleri</a></li>
                     <li><a href="personel.aspx"><i class="fa fa-user" ></i> Personel Bilgileri</a></li>
                     <li><a href="settings.aspx"><i class="fa fa-cogs" ></i> Site Ayarları</a></li>
-                    <li><a href="personel.aspx"><i class="fa fa-exclamation-triangle" ></i> Sıfırla</a></li>
+                    <li><a href="reset.aspx"><i class="fa fa-exclamation-triangle" ></i> Sıfırla</a></li>
 
                 </ul>
                 
