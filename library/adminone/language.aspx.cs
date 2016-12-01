@@ -17,10 +17,14 @@ public partial class library_adminone_language : System.Web.UI.Page
         baglan.Open();
         SqlCommand getir = new SqlCommand("select * from keywords",baglan);
         SqlDataReader oku = getir.ExecuteReader();
-
+        Session["@form"] = "";
         if (oku.Read())
         {
-            TextBox1.Text = oku["turkish"].ToString();
+            do
+            {
+                Session["@form"] = Session["@form"] + "<div class=\"row\"><div class=\"col-lg-3\"><input type=\"text\" value=\"" + oku["turkish"].ToString() + "\" class=\"form-control\" /></div><div class=\"col-lg-3\"><input type=\"text\" value=\"" + oku["english"].ToString() + "\" class=\"form-control\" /></div><div class=\"col-lg-3\"><input type=\"text\" value=\"" + oku["spanish"].ToString() + "\" class=\"form-control\" /></div><div class=\"col-lg-3\"><input type=\"text\" value=\"" + oku["almanca"].ToString() + "\" class=\"form-control\" /></div></div>";
+            } while (oku.Read());
+            
         
         }
     }

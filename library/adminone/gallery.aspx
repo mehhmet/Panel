@@ -34,9 +34,10 @@
 <div class="page-header"><h2><p class="text-primary">Dosya Galerisi</p></h2></div>
 </div>
 
-
-<div class="row">
-<div class="col-lg-12">
+    <asp:Button ID="Button1" runat="server" Text="Button" onclick="Button1_Click" Visible="false"/>
+<% Response.Write(Session["@fotolar"].ToString()); %>
+<% Response.Write(Session["@popup"].ToString()); %>
+<!--
 
 <a href="#modal"><div class="col-lg-2"><img width="100%" height="100%" src="../../library/images/1.jpg" /></div></a>
 <div class="col-lg-2"><img width="100%" height="100%" src="../../library/images/2.jpg" /></div>
@@ -45,9 +46,9 @@
 <div class="col-lg-2"><img width="100%" height="100%" src="../../library/images/5.jpg" /></div>
 <div class="col-lg-2"><img width="100%" height="100%" src="../../library/images/6.jpg" /></div>
 
-</div>
 
-<div class="col-lg-12">
+
+
 
 <div class="col-lg-2"><img width="100%" height="100%" src="../../library/images/1.jpg" /></div>
 <div class="col-lg-2"><img width="100%" height="100%" src="../../library/images/2.jpg" /></div>
@@ -56,12 +57,11 @@
 <div class="col-lg-2"><img width="100%" height="100%" src="../../library/images/5.jpg" /></div>
 <div class="col-lg-2"><img width="100%" height="100%" src="../../library/images/6.jpg" /></div>
 
-</div>
 
 
 
 
-</div>
+
 
 
 
@@ -116,7 +116,7 @@
 
 
 	</div>
-</div>
+</div>-->
 
 
 </asp:Content>

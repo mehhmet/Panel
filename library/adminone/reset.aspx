@@ -72,28 +72,7 @@
 </div>
 <div class></div>
 <div class="page-header"></div>
-<div class="row">
-    
-     
-    <div class="col-lg-12" style="text-align:center;">
 
-        <div class="form-group">
-                            
-                            <label class="radio-inline">
-                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>
-                                Seçilenleri Sıfırla
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">
-                                Hepsini Sıfırla
-                                    
-                            </label>
-                            
-                        </div>
-
-    </div>
-    
-</div>
 
 
 

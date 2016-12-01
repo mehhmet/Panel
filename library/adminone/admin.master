@@ -4,6 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+
+
     <title></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +24,9 @@
 
     <script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
     <script type="text/javascript" src="http://www.prepbootstrap.com/Content/js/gridData.js"></script>
-
+    <style type="text/css">
+        .myicon i:hover{color:#ffffff;}
+    </style>
 
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -38,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="default.aspx">Panel Versiyonu = 1.0</a>
+                <a class="navbar-brand" href="default.aspx">Panel Versiyonu = <% Response.Write(Session["@versiyonum"].ToString()); %> </a>
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul id="active" class="nav navbar-nav side-nav">
@@ -49,10 +53,10 @@
                     <li><a href="sliders.aspx"><i class="fa fa-sliders"></i> Slider</a></li>
                     <li><a href="produck.aspx"><i class="fa fa-trademark"></i> Ürünler</a></li>
                     <li><a href="language.aspx"><i class="fa fa-font"></i> Dil Seçenekleri</a></li>                    
-                    <li><a href="comments.aspx"><i class="fa fa-comments-o"></i> Mesaj/Yorum <span class="badge"> 5</span></a></li>
+                    <li><a href="comments.aspx"><i class="fa fa-comments-o"></i> Mesaj/Yorum <span class="badge" style="background:#cc0000;"> <% Response.Write(Session["@okunmamis"]); %> </span></a></li>
                     <li><a href="administrator.aspx"><i class="fa fa-sign-in"></i> Admin Girişleri</a></li>
                     <li><a href="personel.aspx"><i class="fa fa-user" ></i> Personel Bilgileri</a></li>
-                    <li><a href="settings.aspx"><i class="fa fa-cogs" ></i> Site Ayarları</a></li>
+                    <li><a href="settings.aspx"><i class="fa fa-cogs" ></i> Panel Ayarları</a></li>
                     <li><a href="reset.aspx"><i class="fa fa-exclamation-triangle" ></i> Sıfırla</a></li>
 
                 </ul>
@@ -61,12 +65,12 @@
                 <ul class="nav navbar-nav navbar-right navbar-user">
                     
                     <li class="dropdown user-dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Mehmet CABAOĞLU<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <% Response.Write(Session["@name"].ToString());  %><b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="#"><i class="fa fa-user"></i> Profilim</a></li>
                             <li><a href="#"><i class="fa fa-gear"></i> Ayarlar</a></li>
                             <li class="divider"></li>
-                            <li><a href="#"><i class="fa fa-power-off"></i> Çıkış Yap</a></li>
+                            <li><a href="exit.aspx"><i class="fa fa-power-off"></i> Çıkış Yap</a></li>
 
                         </ul>
                     </li>
